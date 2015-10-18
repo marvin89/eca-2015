@@ -5,30 +5,30 @@ ecaApp.config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
 		.state('home', {
 			url:"/",
-			templateUrl:"home.html"
+			templateUrl:"templates/home.html"
 		})
 		.state('register', {
 			url:"/register",
-			templateUrl:"register.html"
+			templateUrl:"templates/register.html"
 		})
 		.state('team', {
 			url:"/team",
-			templateUrl:"team.html"
+			templateUrl:"templates/team.html"
 		})
 		.state('idea', {
 			url:"/idea",
-			templateUrl:"idea.html"
+			templateUrl:"templates/idea.html"
 		})
 		.state('juryFeedback', {
 			url:"/juryFeedback",
-			templateUrl:"juryFeedback.html"
+			templateUrl:"templates/juryFeedback.html"
 		})
 		.state('feedback', {
 			url:"/feedback",
-			templateUrl:"feedback.html"
+			templateUrl:"templates/feedback.html"
 		})
 		.state('login', {
 			url:"/login",
-			templateUrl:"login.html"
+			templateUrl:"templates/login.html"
 		});
 })
