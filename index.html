@@ -14,7 +14,7 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/eca.css">
 	</head>
 
-	<body>
+	<body ng-app="ecaApp">
 		<div class="ui top fixed borderless menu">
 			<div class="ui grid container">
 				<div class="ui computer tablet only row">
@@ -61,27 +61,7 @@
 			</div>
 		</div>
 
-		<div class="ui main text cards container row">
-			<img src="assets/images/android-login.png" class="ui medium centered image" alt="Android">
-			<div class="ui fluid card login-box">
-				<div class="content">
-					<div class="header ui centered">Log in for your team profile</div>
-					<div class="description">
-						<form class="ui form">
-							<div class="field">
-								<input type="email" name="email" placeholder="Email" required>
-							</div>
-							<div class="field">
-								<input type="password" name="password" placeholder="Password" required>
-							</div>
-						</form>
-					</div>
-				</div>
-				<div class="ui green bottom attached button">
-					<i class="user icon"></i> Log in
-				</div>
-			</div>
-		</div>
+		<div ui-view></div>
 
 		<div class="ui green inverted vertical footer bottom segment row">
 			<div class="ui center aligned container">
@@ -132,7 +112,11 @@
 
 		<script src="node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="semantic/dist/semantic.min.js"></script>
+		<script src="assets/lib/angular.min.js"></script>
+		<script src="assets/lib/angular-ui-router.min.js"></script>
 		<script src="assets/js/eca.js"></script>
+		<script src="assets/js/app.js"></script>
+		<script src="assets/js/login.js"></script>
 	</body>
 
 </html>
