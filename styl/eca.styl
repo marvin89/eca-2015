@@ -13,16 +13,27 @@
 .hidden
 	display: none !important
 
+.ui.top.menu
+	.header.item:hover, .header.item:active, .header.item:focus
+		background-color: inherit
+
+
 .ui.vertical.navbar.menu
 	box-shadow: none
 	border: none
 	border-radius: 0
 
-.right.menu.open
-	.menu.item.open
-		background-color: #21ba45
-		.icon
-			color: white !important
-
-	.icon
-		margin: 0
+.ui.mobile.only
+	.right.menu.open
+		.ui.button
+			padding-left: 1rem;
+			padding-right: 1rem;
+			.icon
+				margin: 0
+		.toggle.item
+			&.open
+				background-color: #21ba45
+				.icon
+					color: white !important
+			.icon
+				margin: 0

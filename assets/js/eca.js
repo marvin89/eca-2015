@@ -2,18 +2,16 @@
 
 	$(document).ready(function() {
 
-		var $menuToggle  = $('.right.menu.open > .item');
+		var $menuToggle  = $('.right.menu.open > .toggle');
 		$menuToggle.on('click', function() {
 			$(this).toggleClass('open');
 			$(this).find('.icon').toggleClass('sidebar remove');
 			$('.ui.vertical.navbar.menu').toggleClass('hidden');
 		});
 
-	});
-
-	$(window).load(function() {
-
-		var editor;
+		$('.ui.vertical.navbar.menu .item').on('click', function() {
+			$menuToggle.trigger('click');
+		});
 
 	});
 

@@ -1,5 +1,5 @@
 ecaApp.controller ('loginController', ['$scope', '$state', function($scope, $state){
-	$scope.login=function() {
+	$scope.login = function() {
 		$state.go("team");
 	}
 }])
