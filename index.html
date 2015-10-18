@@ -15,26 +15,53 @@
 	</head>
 
 	<body>
-		<div class="ui fluid menu">
-			<div class="ui container">
-				<div href="#" class="header item">
-					<img class="ui fluid image" src="assets/images/logo.png">
+		<div class="ui top fixed borderless menu">
+			<div class="ui grid container">
+				<div class="ui computer tablet only row">
+					<a href="#" class="header item">
+						<img class="ui small fluid image" src="assets/images/logo.png">
+					</a>
+					<div class="right small menu">
+						<a href="#" class="item">Home</a>
+						<a href="#" class="item">About</a>
+						<a href="#" class="item">Rules</a>
+						<a href="#" class="item">Prizes</a>
+						<a href="#" class="item">People</a>
+						<a href="#" class="item">Contact</a>
+						<div class="item">
+							<a href="#" class="ui green button">
+								<i class="user icon"></i>Log in
+							</a>
+						</div>
+					</div>
 				</div>
-				<div class="right menu">
-					<a href="#" class="item">Home</a>
-					<a href="#" class="item">About</a>
-					<a href="#" class="item">Rules</a>
-					<a href="#" class="item">Prizes</a>
-					<a href="#" class="item">People</a>
-					<a href="#" class="item">Contact</a>
-					<div class="item">
-						<a href="#" class="ui green button">Log in</a>
+				<div class="ui mobile only row">
+					<a href="#" class="header item">
+						<img class="ui small fluid image" src="assets/images/logo.png">
+					</a>
+					<div class="right menu open">
+						<a href="#" class="menu item">
+							<i class="green sidebar icon"></i>
+						</a>
+						<div class="item">
+							<a href="#" class="ui green button">
+								<i class="user icon"></i>Log in
+							</a>
+						</div>
+					</div>
+					<div class="ui vertical navbar menu hidden fluid">
+						<a href="#" class="item">Home</a>
+						<a href="#" class="item">About</a>
+						<a href="#" class="item">Rules</a>
+						<a href="#" class="item">Prizes</a>
+						<a href="#" class="item">People</a>
+						<a href="#" class="item">Contact</a>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="ui main text cards container">
+		<div class="ui main text cards container row">
 			<img src="assets/images/android-login.png" class="ui medium centered image" alt="Android">
 			<div class="ui fluid card login-box">
 				<div class="content">
@@ -56,7 +83,7 @@
 			</div>
 		</div>
 
-		<div class="ui green inverted vertical footer segment">
+		<div class="ui green inverted vertical footer bottom segment row">
 			<div class="ui center aligned container">
 				<div class="ui stackable divided grid">
 					<div class="four wide column">
@@ -102,6 +129,10 @@
 				</div>
 			</div>
 		</div>
+
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="semantic/dist/semantic.min.js"></script>
+		<script src="assets/js/eca.js"></script>
 	</body>
 
 </html>
