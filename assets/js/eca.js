@@ -11,4 +11,10 @@
 
 	});
 
+	$(window).load(function() {
+
+		var editor;
+
+	});
+
 })(jQuery)
