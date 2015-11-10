@@ -13,6 +13,23 @@
 			$menuToggle.trigger('click');
 		});
 
+		$('.circular.icon.button').on('click', function() {
+	        $(this).parents('.segment').dimmer('hide');
+	    });
+
+	    $('.bottom.buttons > .button').on('click', function() {
+	        $(this).parents('.segment').dimmer('show');
+	    });
+
+		// Enable modal toggle
+		$('[data-modal]').click(function() {
+			var modal = $(this).attr('data-modal');
+			$(modal).modal('show');
+		});
+
+		// Enable accordions
+		$('.ui.accordion').accordion();
+
 	});
 
 })(jQuery)
